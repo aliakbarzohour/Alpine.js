@@ -11,12 +11,11 @@
 
 <body>
     <!-- this is a commponent in Alpine.js -->
-    <div x-data="{name : ''}">
-        <h3>type to bind ...</h3>
-        <input x-model="name">
-        <span x-text="name.length"></span>
-        <p x-text="name"></p>
-    </div>
+    <h3>Event</h3>
+    <form x-data="{name:''}" @submit.prevent="console.log($event)" class=".cont">
+        <input x-model="name" required>
+        <button type="submit">submit</button>
+    </form>
 
 
     <!-- add a alpine.js in html  -->

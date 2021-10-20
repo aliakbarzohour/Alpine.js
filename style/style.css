@@ -20,7 +20,7 @@ button {
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.048);
     color: whitesmoke;
-    font-size: 1em;
+    font-size: .6em;
     border-radius: 20px;
     border: 2px solid white;
     cursor: pointer;
@@ -30,7 +30,7 @@ input {
     background-color: rgba(255, 255, 255, 0.048);
     border-radius: 20px;
     border: 2px solid white;
-    padding: 20px;
+    padding: 15px;
 }
 
 p {
@@ -42,4 +42,10 @@ p {
 h3 {
     color: whitesmoke;
     margin: 10px;
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
