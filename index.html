@@ -11,9 +11,11 @@
 
 <body>
     <!-- this is a commponent in Alpine.js -->
-    <div x-data="{visible : false}">
-        <button @click="visible = !visible">toggle</button>
-        <span x-show="visible">i love Alpine.js</span>
+    <div x-data="{name : ''}">
+        <h3>type to bind ...</h3>
+        <input x-model="name">
+        <span x-text="name.length"></span>
+        <p x-text="name"></p>
     </div>
 
 
