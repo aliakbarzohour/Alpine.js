@@ -10,7 +10,11 @@
 </head>
 
 <body>
-    "" welcome to my project in Alpine.js ""
+    <!-- this is a commponent in Alpine.js -->
+    <div class="container" x-data="{open : true , msg : 'im aliakbar zohour'}">
+        <span x-show="open">hello</span>
+        <span x-text="msg"></span>
+    </div>
 
 
     <!-- add a alpine.js in html  -->
