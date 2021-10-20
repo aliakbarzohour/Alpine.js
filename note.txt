@@ -1,0 +1,6 @@
+this is a note for learning Alpine.js
+
+| Always in programing 0 = false and 1,2,3,... = true
+
+| can be replace x-on: from @ used
+
