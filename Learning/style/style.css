@@ -33,19 +33,7 @@ input {
     padding: 15px;
 }
 
-p {
-    color: whitesmoke;
-    font-size: .7em;
-    margin: 10px;
-}
-
 h3 {
     color: whitesmoke;
     margin: 10px;
-}
-
-.cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
