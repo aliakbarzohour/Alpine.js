@@ -11,14 +11,14 @@
 
 <body>
     <!-- this is a commponent in Alpine.js -->
-    <div class="container" x-data="{open : true , msg : 'im aliakbar zohour'}">
-        <span x-show="open">hello</span>
-        <span x-text="msg"></span>
+    <div x-data="{visible : false}">
+        <button @click="visible = !visible">toggle</button>
+        <span x-show="visible">i love Alpine.js</span>
     </div>
 
 
     <!-- add a alpine.js in html  -->
-    <script src="Alpine/cdn.min.js" defer></script>
+    <script src="Alpine/cdn.min.js"></script>
 </body>
 
 </html>
