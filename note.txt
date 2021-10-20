@@ -4,3 +4,6 @@ this is a note for learning Alpine.js
 
 | can be replace x-on: from @ used
 
+| can be replace e.preventDefault from @*.prevent used
+
+| reauired is a new validation in html5
