@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to image searcher</title>
+    <!-- add a alpine in html  -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
 <style>
     /* styling */
@@ -24,10 +26,24 @@
 </style>
 
 <body>
+    <!-- start coding in alpine.js commponent -->
+    <div x-data="{
+        query: '',
+        img: '',
+        getImage() {
+            this.img = `https://source.unsplash.com/1600x900/?${this.query}`;
+        }
+    }">
+        <form @submit.prevent="getImage">
+            <input x-model="query">
+            <button type="submit">Search</button>
+        </form>
+        <div x-show="img">
+            <img :src="img" style="width: 300px">
+        </div>
+    </div>
 
 
-    <!-- add a alpine in html  -->
-    <script src="Alpine.js" defer></script>
 </body>
 
 </html>
