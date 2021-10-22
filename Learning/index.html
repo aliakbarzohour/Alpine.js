@@ -11,12 +11,11 @@
 
 <body>
     <!-- this is a commponent in Alpine.js -->
-    <h3>Event</h3>
-    <form x-data="{name:''}" @submit.prevent="console.log($event)" class=".cont">
-        <input x-model="name" required>
-        <button type="submit">submit</button>
-    </form>
-
+    <h3>outside click</h3>
+    <div x-data="{open : false}">
+        <button @click="open = true">click for showing text box</button>
+        <h3 x-show="open" @click.outside="open = false" class="box">hellooooooooooooooo</h3>
+    </div>
 
     <!-- add a alpine.js in html  -->
     <script src="Alpine/cdn.min.js"></script>

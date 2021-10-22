@@ -11,6 +11,7 @@ body {
     font-size: 2em;
     font-weight: bold;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -26,14 +27,25 @@ button {
     cursor: pointer;
 }
 
+
+/* 
 input {
     background-color: rgba(255, 255, 255, 0.048);
     border-radius: 20px;
     border: 2px solid white;
     padding: 15px;
-}
+} */
 
 h3 {
     color: whitesmoke;
     margin: 10px;
+}
+
+.box {
+    background-color: rgb(241, 255, 250);
+    color: black;
+    border: 2px dashed black;
+    margin: 10px;
+    padding: 5px 10px;
+    transition: .7s;
 }
