@@ -11,11 +11,15 @@
 
 <body>
     <!-- this is a commponent in Alpine.js -->
-    <h3>outside click</h3>
-    <div x-data="{open : false}">
-        <button @click="open = true">click for showing text box</button>
-        <h3 x-show="open" @click.outside="open = false" class="box">hellooooooooooooooo</h3>
-    </div>
+    <h3>--- input's ---</h3>
+
+    text
+    <input type="text">number
+    <input type="number">checkbox
+    <input type="checkbox" value="check">radio
+    <input type="radio">
+    <input type="radio">password
+    <input type="password">
 
     <!-- add a alpine.js in html  -->
     <script src="Alpine/cdn.min.js"></script>
