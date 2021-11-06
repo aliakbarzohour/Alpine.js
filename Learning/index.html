@@ -14,9 +14,9 @@
     <div x-data="{plan : ''}">
         <h3>select's</h3>
         <select x-model="plan">
-            <option>Please chose the plan </option>
-            <option value="year">year</option>
-            <option value="mount">mount</option>
+            <option disabled selected>Please chose the plan </option>
+            <option value="year">yearly</option>
+            <option value="mounth">mounthly</option>
         </select>
         <h4 x-text="`you've chose ${plan} plan .`"></h4>
     </div>
