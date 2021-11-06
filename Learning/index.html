@@ -11,14 +11,11 @@
 
 <body>
     <!-- this is a commponent in Alpine.js -->
-    <div x-data="{plan : ''}">
-        <h3>select's</h3>
-        <select x-model="plan">
-            <option disabled selected>Please chose the plan </option>
-            <option value="year">yearly</option>
-            <option value="mounth">mounthly</option>
-        </select>
-        <h4 x-text="`you've chose ${plan} plan .`"></h4>
+    <div x-data>
+        <h3>Modal</h3>
+        <button @click="open = !open">click me</button>
+
+        <div class="modal">hello im modal ...</div>
     </div>
     <!-- add a alpine.js in html  -->
     <script src="Alpine/cdn.min.js"></script>

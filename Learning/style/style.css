@@ -18,7 +18,7 @@ body {
 }
 
 
-/* button {
+button {
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.048);
     color: whitesmoke;
@@ -26,17 +26,27 @@ body {
     border-radius: 20px;
     border: 2px solid white;
     cursor: pointer;
-} */
-
-input {
-    background-color: rgba(255, 255, 255, 0.048);
-    border-radius: 20px;
-    border: 2px solid white;
-    padding: 15px;
-    color: whitesmoke;
 }
 
 h3 {
     color: whitesmoke;
     margin: 10px;
+}
+
+.modal_wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+}
+
+.modal {
+    width: 40%;
+    padding: 10px;
+    background-color: white;
+    color: black;
 }
