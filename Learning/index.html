@@ -11,16 +11,15 @@
 
 <body>
     <!-- this is a commponent in Alpine.js -->
-    <h3>--- input's ---</h3>
-
-    text
-    <input type="text">number
-    <input type="number">checkbox
-    <input type="checkbox" value="check">radio
-    <input type="radio">
-    <input type="radio">password
-    <input type="password">
-
+    <div x-data="{plan : ''}">
+        <h3>select's</h3>
+        <select x-model="plan">
+            <option>Please chose the plan </option>
+            <option value="year">year</option>
+            <option value="mount">mount</option>
+        </select>
+        <h4 x-text="`you've chose ${plan} plan .`"></h4>
+    </div>
     <!-- add a alpine.js in html  -->
     <script src="Alpine/cdn.min.js"></script>
 </body>
