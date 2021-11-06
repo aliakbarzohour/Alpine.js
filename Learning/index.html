@@ -11,11 +11,13 @@
 
 <body>
     <!-- this is a commponent in Alpine.js -->
-    <div x-data>
+    <div x-data="{open : false}">
         <h3>Modal</h3>
         <button @click="open = !open">click me</button>
-
-        <div class="modal">hello im modal ...</div>
+        <!-- this div is a modal  -->
+        <div class="modal_wrapper" x-show="open">
+            <div class="modal" @click.outside="open = false">hello im a modal</div>
+        </div>
     </div>
     <!-- add a alpine.js in html  -->
     <script src="Alpine/cdn.min.js"></script>
